@@ -1,0 +1,72 @@
+@import 'components/header.css';
+@import 'components/footer.css';
+
+@import "components/normalize.css";
+
+@font-face {
+    font-family: 'MPLUS1p';
+    src: url('.././assets/fonts/mplus1p/MPLUS1p-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MPLUS1p';
+    src: url('.././assets/fonts/mplus1p/MPLUS1p-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MPLUS1p';
+    src: url('.././assets/fonts/mplus1p/MPLUS1p-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MPLUS1p';
+    src: url('.././assets/fonts/mplus1p/MPLUS1p-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MPLUS1p';
+    src: url('.././assets/fonts/mplus1p/MPLUS1p-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MPLUS1p';
+    src: url('.././assets/fonts/mplus1p/MPLUS1p-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MPLUS1p';
+    src: url('.././assets/fonts/mplus1p/MPLUS1p-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --primary: #F61067;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 0 24px;
+}
