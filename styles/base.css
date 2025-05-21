@@ -2,6 +2,7 @@
 @import 'components/footer.css';
 
 @import "components/normalize.css";
+@import "utils.css";
 
 @font-face {
     font-family: 'MPLUS1p';
@@ -69,6 +70,8 @@
     --tetriary: #00F0B5;
 
     --quaternary: #F67110;
+
+    --text-main: #776C82;
 }
 
 .container {
@@ -83,10 +86,51 @@
     color: var(--primary);
 }
 
+.text-main {
+    color: var(--text-main);
+    letter-spacing: 0;
+}
+
+section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    letter-spacing: 0;
+}
+
+.section-title {
+    color: var(--primary);
+
+    font-size: 12.6px;
+    font-weight: 800;
+    letter-spacing: 6px;
+
+    text-transform: uppercase;
+}
+
+.content-title {
+    font-size: 45px;
+}
+
+.primary-btn {
+    padding: 0.75rem 3rem;
+
+    font-size: 13.5px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+
+    background-color: var(--primary);
+
+    border-radius: 2rem;
+}
+
 .glass-btn {
     background-color: rgba(196, 196, 196, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
+
 .glass-btn:hover {
     background-color: rgba(196, 196, 196, 0.2);
 }

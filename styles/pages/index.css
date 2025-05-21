@@ -15,7 +15,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('../../assets/images/header.jpg');
+    background-image: url('../../assets/images/home/hero.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -146,6 +146,62 @@
 .scroll-button {
     border-radius: 1rem;
     padding: 0.75rem 0.5rem;
+}
+
+.intro__content {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 2rem;
+
+    width: 100%;
+
+    max-width: 25rem;
+}
+
+.benefits {
+    position: relative;
+    background-color: transparent;
+
+    color: white;
+}
+
+.benefits::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../../assets/images/home/benefits.jpg');
+    background-position: left top;
+    background-size: 80rem auto;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    filter: grayscale(100%);
+    z-index: -2;
+}
+
+.benefits::after {
+    content: '';
+    width: 80rem;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, var(--secondary-300), 95%, rgba(48, 18, 78, 0.9));
+    pointer-events: none;
+    z-index: -1;
+}
+
+.benefits__content {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 2rem;
+
+    width: 100%;
+
+    max-width: 29rem;
 }
 
 @media (max-width: 992px) {
