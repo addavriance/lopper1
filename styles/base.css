@@ -73,7 +73,7 @@
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
 
     margin: 0 auto;
     padding: 0 24px;
@@ -82,3 +82,12 @@
 .text-primary {
     color: var(--primary);
 }
+
+.glass-btn {
+    background-color: rgba(196, 196, 196, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.glass-btn:hover {
+    background-color: rgba(196, 196, 196, 0.2);
+}
+
