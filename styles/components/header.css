@@ -4,29 +4,23 @@
     top: 0;
     left: 0;
     background-color: transparent;
+    z-index: 3;
 }
 
 .header--solid {
     position: relative;
-    background-color: #fff;
+    background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
 }
 
 .logo {
     font-weight: 900;
     font-size: 24px;
-    color: #fff;
+    color: white;
 }
 
 .header--solid .logo {
-    color: #333;
+    color: var(--secondary-400);
 }
 
 .header__nav-block, .header__nav, .contact-block {
@@ -49,15 +43,29 @@
     transition: color 0.3s ease;
 }
 
+.nav__item:hover {
+    color: white;
+}
+
 .nav__item, .nav__item--active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-weight: 500;
 }
 
 .nav__item--active {
     color: white;
+}
+
+.header--solid .nav__item,
+.header--solid .nav__item:hover,
+.header--solid .nav__item--active {
+    color: var(--secondary-400);
+}
+
+.header--solid .nav__item:hover::after,
+.header--solid .nav__item--active::after {
+    background-color: var(--secondary-400);
 }
 
 .nav__item::after {
@@ -65,13 +73,9 @@
     display: block;
     width: 0;
     height: 2px;
-    background-color: #fff;
+    background-color: white;
     margin-top: 4px;
-    transition: width 0.3s ease;
-}
-
-.nav__item:hover {
-    color: white;
+    transition: all 0.3s ease;
 }
 
 .nav__item--active::after, .nav__item:hover::after {
@@ -79,7 +83,7 @@
     display: block;
     width: 65%;
     height: 2px;
-    background-color: #fff;
+    background-color: white;
     margin-top: 4px;
 }
 
@@ -88,12 +92,16 @@
 }
 
 .contact-block__icon {
-    color: #fff;
+    color: white;
 }
 
 .contact-block__text {
-    color: #fff;
-    font-weight: 500;
+    color: white;
+}
+
+.header--solid .contact-block__icon,
+.header--solid .contact-block__text {
+    color: var(--secondary-400);
 }
 
 .burger-menu {
@@ -110,12 +118,16 @@
 .burger-menu-line {
     width: 27px;
     height: 2px;
-    background-color: #fff;
+    background-color: white;
     transition: all 0.3s ease;
 }
 
 .burger-menu-line:nth-child(3) {
     width: 18px;
+}
+
+.header--solid .burger-menu-line {
+    background-color: var(--secondary-400);
 }
 
 @media (max-width: 992px) {

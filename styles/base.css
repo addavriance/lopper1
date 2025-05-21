@@ -61,6 +61,14 @@
 
 :root {
     --primary: #F61067;
+
+    --secondary: #5E239D;
+    --secondary-300: #30124E;
+    --secondary-400: #150433;
+
+    --tetriary: #00F0B5;
+
+    --quaternary: #F67110;
 }
 
 .container {
@@ -69,4 +77,8 @@
 
     margin: 0 auto;
     padding: 0 24px;
+}
+
+.text-primary {
+    color: var(--primary);
 }
