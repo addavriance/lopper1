@@ -67,11 +67,46 @@
     --secondary-300: #30124E;
     --secondary-400: #150433;
 
-    --tetriary: #00F0B5;
+    --tertiary: #00F0B5;
 
     --quaternary: #F67110;
 
     --text-main: #776C82;
+}
+
+.bg-white {
+    background-color: white;
+    color: var(--secondary-400)
+}
+
+.bg-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+    color: white
+}
+
+.bg-secondary-300 {
+    background-color: var(--secondary-300);
+    color: white
+}
+
+.bg-secondary-400 {
+    background-color: var(--secondary-400);
+    color: white
+}
+
+.bg-tertiary {
+    background-color: var(--tertiary);
+    color: white;
+}
+
+.bg-quaternary {
+    background-color: var(--quaternary);
+    color: white;
 }
 
 .container {
@@ -84,6 +119,18 @@
 
 .text-primary {
     color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-tertiary {
+    color: var(--tertiary)
+}
+
+.text-quaternary {
+    color: var(--quaternary)
 }
 
 .text-main {
@@ -110,6 +157,7 @@ section {
 
 .content-title {
     font-size: 45px;
+    font-weight: 500;
 }
 
 .primary-btn {
