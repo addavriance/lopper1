@@ -326,6 +326,14 @@
 }
 
 .testimonials__slider {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
     margin-top: 6rem;
 }
 
@@ -340,6 +348,24 @@
     font-weight: normal;
 
     line-height: 177%;
+}
+
+.slider-controls {
+    width: 100%;
+
+    position: absolute;
+
+    align-self: center;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials__author-info {
+    font-size: 18px;
+    position: absolute;
+
+    bottom: -4rem;
 }
 
 @media (max-width: 992px) {

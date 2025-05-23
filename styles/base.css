@@ -120,6 +120,32 @@ section {
     border-radius: 2rem;
 }
 
+.primary-circle-btn {
+    padding: 0.75rem 0.75rem;
+
+    aspect-ratio: 1/1;
+
+    color: var(--primary);
+
+    border: 1px solid var(--primary);
+
+    border-radius: 50%;
+
+    transition: all 0.3s ease;
+}
+
+.primary-circle-btn:hover {
+    color: white;
+
+    background-color: var(--primary);
+}
+
+.primary-circle-btn.active {
+    color: white;
+
+    background-color: var(--primary);
+}
+
 .glass-btn {
     background-color: rgba(196, 196, 196, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.5);
