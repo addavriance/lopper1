@@ -141,6 +141,17 @@
     padding: 0.75rem 0.5rem;
 }
 
+.intro {
+    padding-top: 15rem;
+}
+
+.intro__wrapper {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+}
+
 .intro__content {
     display: flex;
     flex-direction: column;
@@ -152,6 +163,63 @@
     width: 100%;
 
     max-width: 25rem;
+}
+
+.quote-block__image {
+    position: absolute;
+
+    top: -8rem;
+    right: 10rem;
+
+    max-width: 460px;
+}
+
+.quote-block__content {
+    top: -10rem;
+    right: -5rem;
+
+    max-width: 380px;
+
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8rem 5rem;
+
+    gap: 3rem;
+
+    font-family: 'Noticia Text', serif;
+    font-style: italic;
+}
+
+.quote-block__content::before {
+    content: '';
+
+    top: 0;
+    right: 0;
+
+    position: absolute;
+
+    background-color: var(--secondary-300);
+
+    width: 120%;
+    height: 2rem;
+}
+
+.quote-block__quote {
+    font-size: 22.5px;
+}
+
+.quote-block__symbol {
+    font-size: 144px;
+    width: 6rem;
+    height: 4rem;
+    line-height: 80%;
+
+    color: rgba(255, 255, 255, 0.25);
 }
 
 .benefits {
@@ -240,7 +308,7 @@
 }
 
 .services-slider__preview {
-    width: 30rem;
+    max-width: 460px;
     height: 40rem;
     object-fit: cover;
 }
@@ -363,6 +431,45 @@
 
 .testimonials__avatar-wrapper {
     position: relative;
+
+    img {
+        position: absolute;
+    }
+
+    :nth-child(2) {
+        top: 10rem;
+        left: 6rem;
+    }
+
+    :nth-child(3) {
+        top: 25rem;
+        left: -8rem;
+    }
+
+    :nth-child(4) {
+        top: 20rem;
+        left: 18rem;
+    }
+
+    :nth-child(5) {
+        top: 20rem;
+        right: 15rem;
+    }
+
+    :nth-child(6) {
+        top: 14rem;
+        right: 7rem;
+    }
+
+    :nth-child(7) {
+        top: 8rem;
+        right: -5rem;
+    }
+
+    :nth-child(8) {
+        top: 25rem;
+        right: -5rem;
+    }
 }
 
 .testimonials__avatar-wrapper::after {
@@ -425,6 +532,80 @@
     position: absolute;
 
     bottom: -4rem;
+}
+
+.newsletter__form {
+    max-width: 35rem;
+
+    margin-top: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #F4F4ED;
+}
+
+.newsletter__email-field {
+    padding: 0.25rem 1rem;
+}
+
+.newsletter__email-field::placeholder {
+    font-weight: 800;
+    text-transform: uppercase;
+
+    font-size: 18px;
+
+    letter-spacing: 4px;
+
+    color: #9B94A3;
+}
+
+.newsletter__subscribe-button {
+    display: flex;
+    align-items: center;
+
+    font-weight: 800;
+    text-transform: uppercase;
+
+    font-size: 12.6px;
+
+    padding: 0.75rem 1.25rem;
+
+    letter-spacing: 6px;
+
+    gap: 1.25rem;
+
+    color: var(--primary);
+
+    background: linear-gradient(to top, #F2F2F2, 10%, white);
+
+    transition: all 0.3s ease;
+
+    .icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.25rem;
+        aspect-ratio: 1/1;
+
+        border: 1px solid var(--primary);
+        border-radius: 50%;
+
+        transition: all 0.3s ease;
+
+        svg {
+            scale: 0.9;
+        }
+    }
+}
+
+.newsletter__subscribe-button:hover {
+    background: linear-gradient(to bottom, #F2F2F2, 10%, white);
+
+    .icon-wrapper {
+        background-color: var(--primary);
+        color: white;
+    }
+
 }
 
 @media (max-width: 992px) {
