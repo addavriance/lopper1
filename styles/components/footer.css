@@ -69,6 +69,8 @@
     display: flex;
     gap: 1rem;
 
+    align-items: center;
+
     font-size: 16.2px;
     font-weight: normal;
     letter-spacing: 0;
@@ -79,6 +81,14 @@
     flex-direction: row;
 
     gap: 3rem;
+}
+
+.footer__contact-icon {
+    min-width: 10px;
+}
+
+.footer__social-icon {
+    min-width: 15px;
 }
 
 .copyright {
