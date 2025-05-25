@@ -1,0 +1,148 @@
+.hero {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    z-index: 0;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../../assets/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    z-index: 1;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(94, 35, 157) linear-gradient(to right, #1d0c5b, 20%, rgba(0, 0, 0, 0));
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.hero__container {
+    display: flex;
+    position: relative;
+    z-index: 3;
+}
+
+.intro__goals {
+    display: grid;
+
+    justify-content: center;
+
+    gap: 8rem;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 32rem))
+}
+
+.intro__desc-primary {
+    margin: 2rem 0 5rem;
+
+    max-width: 52rem;
+}
+
+.features {
+    position: relative;
+    padding: 15rem 0;
+}
+
+.features__container {
+    padding-right: 30rem;
+}
+
+.features__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features__content::before {
+    content: '';
+
+    position: absolute;
+
+    width: 70%;
+    height: 100%;
+
+    top: 0;
+    right: 0;
+
+    z-index: -1;
+
+    background-color: var(--secondary);
+}
+
+.features__content-wrapper {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10rem;
+}
+
+.features__feature {
+    display: flex;
+
+    gap: 20rem;
+}
+
+.feature__title {
+    font-size: 27px;
+    font-weight: 500;
+
+    max-width: 15rem;
+
+    color: var(--primary);
+}
+
+.feature__desc {
+    font-size: 18px;
+    font-weight: 400;
+
+    max-width: 25rem;
+
+    color: white;
+}
+
+.features__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 411px;
+    height: 1146px;
+
+    object-fit: cover;
+    object-position: 47%;
+
+    filter: grayscale(100%);
+}
+
+.features__content::after {
+    content: '';
+
+    mix-blend-mode: multiply;
+
+    position: absolute;
+
+    width: 411px;
+    height: 1146px;
+
+    bottom: 0;
+    right: 0;
+
+    z-index: 2;
+
+    background-color: var(--primary);
+}

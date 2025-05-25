@@ -8,6 +8,23 @@
 .font-extrabold  { font-weight: 800; }
 .font-black      { font-weight: 900; }
 
+.text-xs { font-size: 12.6px; }
+.text-sm { font-size: 16.2px; }
+.text-base { font-size: 18px; }
+.text-lg { font-size: 22.5px; }
+.text-2lg { font-size: 27px; }
+.text-xl { font-size: 6rem; }
+.text-2xl { font-size: 6.9rem; }
+.text-3xl { font-size: 54px; }
+.text-4xl { font-size: 144px; }
+
+.text-uppercase { text-transform: uppercase }
+
+.leading-tight { line-height: 1.2; }
+.tracking-none { letter-spacing: 0; }
+.tracking-wide { letter-spacing: 4px; }
+.tracking-wider { letter-spacing: 6px; }
+
 .ml-0-25 { margin-left: 0.25rem; }
 .ml-0-5  { margin-left: 0.5rem; }
 .ml-1    { margin-left: 1rem; }
