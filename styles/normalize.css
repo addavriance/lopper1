@@ -15,8 +15,16 @@ html, body {
 }
 
 a {
+    display: inline-flex;
+
     text-decoration: none;
     color: inherit;
+
+    transition: all 0.3s ease;
+}
+
+a:active {
+    transform: scale(0.95);
 }
 
 button, input, select, textarea {
@@ -29,7 +37,14 @@ button, input, select, textarea {
 }
 
 button {
+    display: inline-flex;
     cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+button:active {
+    transform: scale(0.95);
 }
 
 ul, ol {

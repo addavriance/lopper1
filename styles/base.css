@@ -1,7 +1,6 @@
-@import 'components/header.css';
-@import 'components/footer.css';
+@import 'common_components.css';
 
-@import "components/normalize.css";
+@import "normalize.css";
 
 @import "fonts.css";
 @import "utils.css";
