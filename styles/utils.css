@@ -13,9 +13,11 @@
 .text-base { font-size: 18px; }
 .text-lg { font-size: 22.5px; }
 .text-2lg { font-size: 27px; }
+.text-3lg { font-size: 45px; }
 .text-xl { font-size: 6rem; }
 .text-2xl { font-size: 6.9rem; }
 .text-3xl { font-size: 54px; }
+.text-3-2xl { font-size: 99px; }
 .text-4xl { font-size: 144px; }
 
 .text-uppercase { text-transform: uppercase }
