@@ -65,6 +65,10 @@
     object-fit: cover;
 }
 
+.testimonials__avatar {
+    object-position: center center;
+}
+
 @media (max-width: 960px) {
     .what-we-do__image {
         display: none;
