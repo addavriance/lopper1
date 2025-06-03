@@ -1,0 +1,73 @@
+.hero::before {
+    background-image: url('../../assets/images/about_features.jpg');
+}
+
+.intro {
+    padding-bottom: 25rem;
+}
+
+.intro__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.team {
+    margin-bottom: -300px;
+}
+
+.team__content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 8rem;
+    justify-content: space-evenly;
+}
+
+.team__content-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15rem;
+}
+
+.team__content-column.left {
+    transform: translateY(-300px);
+}
+
+.team__content-column.right {
+    transform: translateY(-200px);
+}
+
+.note-block {
+    width: 30rem;
+    height: 30rem;
+
+    border-radius: 6px;
+
+    padding: 2.5rem 5rem;
+}
+
+.member-role {
+    opacity: 50%;
+}
+
+.member-avatar-box {
+    width: 6rem;
+    height: 6rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.member-avatar {
+    object-fit: cover;
+    object-position: center center;
+}
+
+.testimonials__avatar {
+    object-position: center center;
+}
