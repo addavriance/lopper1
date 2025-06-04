@@ -1,0 +1,31 @@
+.hero::before {
+    background-image: url('../../assets/images/contact-us-hero.jpg');
+}
+
+.contacts__block-desc {
+    max-width: 14rem;
+    margin-bottom: 4rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+
+    font-size: 18px;
+
+    margin-left: 0.5rem;
+}
+
+.contact-title {
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+}
+
+.contact-bg-icon {
+    position: absolute;
+    opacity: 10%;
+
+    left: -107px;
+}
