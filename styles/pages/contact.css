@@ -2,6 +2,15 @@
     background-image: url('../../assets/images/contact-us-hero.jpg');
 }
 
+.contacts {
+    position: relative;
+    padding-bottom: 25rem;
+}
+
+.contacts__content {
+    display: flex;
+}
+
 .contacts__block-desc {
     max-width: 14rem;
     margin-bottom: 4rem;
@@ -28,4 +37,108 @@
     opacity: 10%;
 
     left: -107px;
+}
+
+.image-box {
+    position: absolute;
+    max-width: 50%;
+    height: 80vw;
+    min-height: 686px;
+    top: 0;
+    right: 0;
+
+    z-index: 1;
+}
+
+.contact-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+
+    transform: scaleX(-1);
+
+    z-index: 1;
+}
+
+.image-box:after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--primary);
+
+    mix-blend-mode: multiply;
+}
+
+.get-in-touch {
+    z-index: 2;
+
+    padding-bottom: 0;
+}
+
+.get-in-touch__block {
+    max-width: 1150px;
+    margin-top: -15rem;
+    position: relative;
+    padding: 7.5rem 6rem;
+    z-index: 2;
+}
+
+.get-in-touch__content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.get-in-touch__column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.get-in-touch__column--left {
+    width: 30%;
+}
+
+.get-in-touch__column--right {
+    width: 70%;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.get-in-touch__label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.25rem;
+}
+
+.get-in-touch__input {
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.get-in-touch__textarea {
+    width: 100%;
+    padding: 2rem 3rem;
+    height: 234px;
+}
+
+.get-in-touch__label-text {
+    font-size: 12.6px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.get-in-touch__button {
+    padding: 1.25rem 3.5rem;
+    border-radius: 3rem;
 }

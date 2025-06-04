@@ -31,17 +31,54 @@
 
 .bg-secondary {
     background-color: var(--secondary);
-    color: white
+    color: white;
+
+    input, textarea {
+        color: var(--secondary-400);
+        background-color: white;
+    }
+
+    input::placeholder, textarea::placeholder {
+        color: var(--text-main);
+        opacity: 50%;
+
+        font-size: 16.2px;
+    }
 }
 
 .bg-secondary-300 {
     background-color: var(--secondary-300);
-    color: white
+    color: white;
+
+    input, textarea {
+        color: var(--secondary-400);
+        background-color: white;
+    }
+
+    input::placeholder, textarea::placeholder {
+        color: var(--text-main);
+        opacity: 50%;
+
+        font-size: 16.2px;
+    }
+
 }
 
 .bg-secondary-400 {
     background-color: var(--secondary-400);
-    color: white
+    color: white;
+
+    input, textarea {
+        color: var(--secondary-400);
+        background-color: white;
+    }
+
+    input::placeholder, textarea::placeholder {
+        color: var(--text-main);
+        opacity: 50%;
+
+        font-size: 16.2px;
+    }
 }
 
 .bg-tertiary {

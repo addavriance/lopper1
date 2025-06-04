@@ -17,8 +17,11 @@ html, body {
 a {
     display: inline-flex;
 
+    width: fit-content;
+
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 
     transition: all 0.3s ease;
 }
