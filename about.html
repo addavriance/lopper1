@@ -23,11 +23,31 @@
                 </svg>
                 <span class="contact-block__text">(01) 666 - 693 - 456</span>
             </a>
-            <button class="burger-menu" aria-label="Toggle menu">
+
+            <input type="radio" name="burger-state" id="burger-open" class="burger-radio" hidden>
+            <input type="radio" name="burger-state" id="burger-close" class="burger-radio" hidden checked>
+
+            <div class="burger-overlay"></div>
+
+            <div class="burger-menu-wrapper">
+                <label for="burger-close" class="burger-close-btn" aria-label="Close menu">
+                    <span class="burger-close-line"></span>
+                    <span class="burger-close-line"></span>
+                </label>
+
+                <nav class="burger-nav">
+                    <a class="burger-nav__item" href="index.html">Home</a>
+                    <a class="burger-nav__item" href="services.html">Services</a>
+                    <a class="burger-nav__item" href="work.html">Work</a>
+                    <a class="burger-nav__item burger-nav__item--active" href="about.html">About</a>
+                </nav>
+            </div>
+
+            <label for="burger-open" class="burger-menu" aria-label="Open menu">
                 <span class="burger-menu-line"></span>
                 <span class="burger-menu-line"></span>
                 <span class="burger-menu-line"></span>
-            </button>
+            </label>
         </div>
     </div>
 </header>

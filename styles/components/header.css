@@ -129,6 +129,101 @@
     background-color: var(--secondary-400);
 }
 
+.burger-radio {
+    display: none;
+}
+
+.burger-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(21, 4, 51, 0.8);
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 998;
+}
+
+#burger-open:checked ~ .burger-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.burger-menu-wrapper {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--secondary-300), var(--secondary-400));
+    transition: all 0.3s ease;
+    z-index: 999;
+    padding: 2rem;
+}
+
+#burger-open:checked ~ .burger-menu-wrapper {
+    right: 0;
+}
+
+.burger-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.burger-close-line {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.burger-close-line:first-child {
+    transform: rotate(45deg);
+}
+
+.burger-close-line:last-child {
+    transform: rotate(-45deg);
+}
+
+.burger-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-top: 4rem;
+}
+
+.burger-nav__item {
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.burger-nav__item:hover,
+.burger-nav__item--active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
 @media (max-width: 992px) {
     .header__nav-block {
         padding: 3rem 3rem;
@@ -154,5 +249,18 @@
 
     .header__nav-block {
         padding: 2rem 1.5rem;
+    }
+
+    .contact-block {
+        display: none;
+    }
+
+    .burger-menu-wrapper {
+        width: 100vw;
+        right: -100vw;
+    }
+
+    #burger-open:checked ~ .burger-menu-wrapper {
+        right: 0;
     }
 }

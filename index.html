@@ -23,11 +23,31 @@
                 </svg>
                 <span class="contact-block__text">(01) 666 - 693 - 456</span>
             </a>
-            <button class="burger-menu" aria-label="Toggle menu">
+
+            <input type="radio" name="burger-state" id="burger-open" class="burger-radio" hidden>
+            <input type="radio" name="burger-state" id="burger-close" class="burger-radio" hidden checked>
+
+            <div class="burger-overlay"></div>
+
+            <div class="burger-menu-wrapper">
+                <label for="burger-close" class="burger-close-btn" aria-label="Close menu">
+                    <span class="burger-close-line"></span>
+                    <span class="burger-close-line"></span>
+                </label>
+
+                <nav class="burger-nav">
+                    <a class="burger-nav__item burger-nav__item--active" href="index.html">Home</a>
+                    <a class="burger-nav__item" href="services.html">Services</a>
+                    <a class="burger-nav__item" href="work.html">Work</a>
+                    <a class="burger-nav__item" href="about.html">About</a>
+                </nav>
+            </div>
+
+            <label for="burger-open" class="burger-menu" aria-label="Open menu">
                 <span class="burger-menu-line"></span>
                 <span class="burger-menu-line"></span>
                 <span class="burger-menu-line"></span>
-            </button>
+            </label>
         </div>
     </div>
 </header>
@@ -50,16 +70,16 @@
                 </div>
                 <div class="scroll-block__content">
                     <p class="scroll-label rotated-text">scroll to see more</p>
-                    <button class="scroll-button glass-btn">
+                    <a class="scroll-button glass-btn" href="#intro">
                         <svg class="scroll-button__icon" width="8" height="29" aria-hidden="true">
                             <use xlink:href="assets/icons.svg#icon-arrow-down-long"></use>
                         </svg>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="intro bg-white">
+    <section class="intro bg-white" id="intro">
         <div class="container intro__container">
             <div class="section-title">intro</div>
             <div class="intro__wrapper">
